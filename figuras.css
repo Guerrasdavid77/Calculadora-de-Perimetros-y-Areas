@@ -1,0 +1,313 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Shadows Into Light', cursive;
+    background: rgb(77,179,191);
+    background: radial-gradient(circle, rgba(77,179,191,1) 0%, rgba(42,87,167,1) 100%);
+    background-size: 1000%;
+    font-size: 62.5%;
+    animation: cambiar 10s ease infinite;
+}
+
+@keyframes cambiar {
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+/*-----------------------------HEADER-----------------------------*/
+header{
+    margin-top: 10px;
+    width: 100%;
+    height: 100px;
+}
+
+header h1{
+    color: rgb(188, 203, 230);
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: #00a6ff -4px 0,
+                #00ffff 4px 0;
+}
+
+/*-----------------------------MAIN-----------------------------*/
+.container-cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards{
+    padding: 10px;
+    background-color:rgba(77,179,191,1);
+    box-shadow: 2px 5px 16px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    width: 300px;
+    min-height: 300px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.cards:hover{
+    box-shadow: inset -1px 3px 10px 5px aqua, 2px 5px 16px 0px aqua, 5px 5px 15px 5px rgba(0,0,0,0);
+    border: 1px solid aqua;
+}
+
+/*-----------------------------CUADRADO-----------------------------*/
+.container-cards .Cuadrado h2{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+.Cuadrado b{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.container-cards .Cuadrado label{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.imagen-cuadrado{
+    width: 50px;
+    height: 50px;
+    background-image: url('./img/cuadrado.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.input-cuadrado{
+    width: 70px;
+    height: 20px;
+    background-color: rgba(77,179,191,1);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(45, 45, 45);
+}
+
+.input-cuadrado:hover{
+    background-color: rgb(91, 199, 211);
+}
+
+.Cuadrado button{
+    width: 100px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 700;
+    background-color: rgba(0, 255, 255, 0.608);
+}
+.Cuadrado button:hover{
+    box-shadow: inset -1px 3px 100px 5px #ffffff, 2px 5px 16px 0px aqua, 5px 5px 15px 5px rgba(0,0,0,0);
+    border: 1px solid aliceblue;
+}
+.resultado-cuadrado p{
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 15px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+/*-----------------------------TRIANGULO-----------------------------*/
+.container-cards .Triangulo h2{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    max-width: 300px;
+}
+.imagen-triangulo{
+    width: 50px;
+    height: 50px;
+    background-image: url('./img/Triangulo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.container-cards .Triangulo label{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.side1, .side2, .base, .height{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.Triangulo form input{
+    margin-right: 10px;
+    width: 50px;
+    height: 20px;
+    background-color: rgba(77,179,191,1);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(45, 45, 45);
+}
+.Triangulo button{
+    width: 100px;
+    height: 50px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 700;
+    background-color: rgba(0, 255, 255, 0.608);
+}
+.Triangulo button:hover{
+    box-shadow: inset -1px 3px 100px 5px #ffffff, 2px 5px 16px 0px aqua, 5px 5px 15px 5px rgba(0,0,0,0);
+    border: 1px solid aliceblue;
+}
+.resultado-triangulo p{
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 15px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/*-----------------------------TRIANGULO-----------------------------*/
+
+.container-cards .Circulo h2{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+.imagen-circulo{
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    background-image: url('./img/circulo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.container-cards .Circulo label{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.radio{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.Circulo form input{
+    margin-right: 10px;
+    width: 50px;
+    height: 20px;
+    background-color: rgba(77,179,191,1);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(45, 45, 45);
+}
+
+.Circulo button{
+    width: 100px;
+    height: 50px;
+    margin: 20px 0 20px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 700;
+    background-color: rgba(0, 255, 255, 0.608);
+}
+.Circulo button:hover{
+    box-shadow: inset -1px 3px 10px 5px #ffffff, 2px 5px 16px 0px aqua, 5px 5px 15px 5px rgba(0,0,0,0);
+    border: 1px solid aliceblue;
+}
+.resultado-circulo p{
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 15px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+
+
+/*--------------------(>980px)-------------------- */
+
+@media only screen and (min-width: 980px){
+    header{
+        margin-top: 80px;
+        width: 100%;
+        height: 100px;
+    }
+    header h1{
+        font-size: 4rem;
+    }
+    
+    .container-cards{
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+        margin-top: 100px;
+    }
+    .cards{
+        margin-right: 20px;
+    }
+}
+
+
+/*--------------------(>1300px)-------------------- */
+
+@media only screen and (min-width: 1300px){
+    header{
+        margin-top: 50px;
+        width: 100%;
+        height: 100px;
+    }
+    header h1{
+        font-size: 5rem;
+    }
+    
+    .container-cards{
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        margin-top: 150px;
+    }
+    .cards{
+        margin: 0 auto;
+        width: 400px;
+        min-height: 400px;
+        padding: 75px;
+    }
+    .container-cards .Cuadrado h2{
+        position: relative;
+        bottom: 30px;
+    }
+    .container-cards .Triangulo h2{
+        position: relative;
+        bottom: 30px;
+    }
+    .container-cards .Circulo h2{
+        position: relative;
+        bottom: 30px;
+    }
+    .container-cards .Cuadrado label{
+        font-family:'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    .container-cards .Triangulo label{
+        font-family:'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    .container-cards .Circulo label{
+        font-family:'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+}
+
+
+

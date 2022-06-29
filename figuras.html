@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./figuras.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <title>Figuras geométricas | Curso JS</title>
+</head>
+<body>
+    <header>
+        <h1>Figuras geométricas</h1>
+    </header>
+    <main class="container-cards">
+        <section class="Cuadrado cards">
+            <h2><span class="imagen-cuadrado"></span>Square</h2>
+            <form>
+                <label for="inputCuadrado">How long will each side of your square measure?</label><br><br>
+                <b>Value: </b><input class="input-cuadrado" id="inputCuadrado" type="number"><br><br>
+                <button type="button" onclick="calcularPerimetroCuadrado()">Get perimetrer</button>
+                <button type="button" onclick="calcularAreaCuadrado()">Get area</button>
+                <div class="resultado-cuadrado">
+                    <p id="resultadoCuadrado">__</p>
+                </div>
+            </form>
+        </section>
+        <section class="Triangulo cards">
+            <h2><span class="imagen-triangulo"></span>Triangle</h2>
+            <form>
+                <label>How long will each side of your triangle?</label><br><br>
+                <span class="side1">Side 1:</span>
+                <input id="inputTrianguloSide1" type="number">
+                <span class="side2">Side 2:</span>
+                <input id="inputTrianguloSide2" type="number"><br><br>
+                <span class="base">Base :</span>
+                <input id="inputTrianguloBase" type="number">
+                <span class="base">Height:</span>
+                <input id="inputTrianguloAltura" type="number"><br><br>
+                <button type="button" onclick="calcularPerimetroTriangulo()">Get perimetrer</button>
+                <button type="button" onclick="calcularAreaTriangulo()">Get area</button>
+                <div class="resultado-triangulo">
+                    <p id="resultadoTriangulo">__</p>
+                </div>
+            </form>
+        </section>
+        <section class="Circulo cards">
+            <h2><span class="imagen-circulo"></span>Radius</h2>
+            <form>
+                <label>How long will be the radius of the circle?</label><br><br>
+                <span class="radio">Radius</span>
+                <input id="inputcirculoradio" type="number"><br><br>
+                <button type="button" onclick="calcularPerimetroCirculo()">Get perimetrer</button>
+                <button type="button" onclick="calcularAreaCirculo()">Get area</button>
+                <div class="resultado-circulo">
+                    <p id="resultadocirculo">__</p>
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+    <script src="./figuras.js"></script>
+</body>
+</html>
